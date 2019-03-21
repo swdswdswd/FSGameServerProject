@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGLoadGameMapC2S";
+
+
+
+message LoadGameMapC2S {
+	//no info
+	float time = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGChatC2S";
+
+import "BaseCommon.proto";
+
+//聊天面板信息
+message ChatC2S {
+	ChatType type = 1;
+	int32 playerid = 2;
+	string msg = 3;
+}

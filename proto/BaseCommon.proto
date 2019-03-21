@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGBaseCommon";
+
+//登录状态
+enum LoginState {
+	_FAILD_ = 0; //登录失败
+	_SUCESSED_ = 1;
+}
+//移动类型
+enum MoveType {
+	_RUN_ = 0; 
+	_WALK_ = 1;
+	_SHOORT_ = 2;
+	_SKILL_ = 3;
+	_JUMP_ = 4;
+	_STOPJUMP_ = 5;
+}
+
+//聊天类型
+enum ChatType {
+	_PLAYERCHAT_ = 0;   //玩家信息
+	_SYSTEMCHAT_ = 1;   //系统推送信息
+}
+
+//技能类型  暂时只有射击和魔法
+enum SkillType {
+	_SHOORTER_ = 0;
+	_MOFA_ = 1;
+}
+
+//玩家坐标信息
+message Coordinate {
+	float x = 1;  //x
+	float y = 2;  //y
+	float z = 3;  //z
+	float o = 4;  //朝向
+ 
+	int32 map = 5; //地图id
+}
+

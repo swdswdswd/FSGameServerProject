@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGLoginGameC2S";
+
+
+//登录请求
+message LoginGameC2S {
+	string username = 1;
+	string password = 2;
+}

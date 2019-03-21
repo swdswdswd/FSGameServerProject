@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGPlayerCommon";
+
+import "BaseCommon.proto";
+
+//玩家坐标信息
+message PlayerCommon {
+	int32 baseid = 1;
+	string name = 2;
+	Coordinate coor = 3;
+	float hp = 4;
+}

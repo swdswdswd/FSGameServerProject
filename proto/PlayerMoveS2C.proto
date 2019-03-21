@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGPlayerMoveS2C";
+
+import "PlayerCommon.proto";
+import "BaseCommon.proto";
+
+//玩家坐标信息
+message PlayerMoveS2C {
+	PlayerCommon movebase = 1;
+	MoveType moveop = 2;
+}

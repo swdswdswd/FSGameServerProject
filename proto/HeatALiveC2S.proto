@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGHeatALiveC2S";
+
+//心跳包  发送时间
+message HeatALiveC2S {
+	float time = 1;
+}

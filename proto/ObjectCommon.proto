@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGObjectCommon";
+
+import "PlayerCommon.proto";
+
+message ObjectSync {
+	PlayerCommon playerbase = 1;
+}

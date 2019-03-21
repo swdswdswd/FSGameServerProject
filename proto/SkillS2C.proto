@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGSkillS2C";
+
+import "BaseCommon.proto";
+
+//技能协议
+message SkillS2C {
+	int32 targetid = 1;
+	int32 attackerid = 2;
+	SkillType type = 3;
+	float damange = 4;
+}

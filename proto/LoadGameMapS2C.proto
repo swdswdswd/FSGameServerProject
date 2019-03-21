@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGLoadGameMapS2C";
+
+import "PlayerCommon.proto";
+
+message LoadGameMapS2C {
+	PlayerCommon mainplayer = 1; //主玩家 基本信息
+}

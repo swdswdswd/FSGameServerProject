@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGLoginGameS2C";
+
+import "BaseCommon.proto";
+
+//服务器响应登录
+message LoginGameS2C {
+	//角色  待定
+	LoginState state = 1;
+}

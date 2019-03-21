@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Pro;
+
+option java_package = "com.fsgame.proto";
+option java_outer_classname = "MSGObjectSyncS2C";
+
+import "ObjectCommon.proto";
+
+
+message ObjectSyncS2C {
+	repeated ObjectSync objects = 1;
+	repeated ObjectSync enter = 2;
+	repeated int32 leave = 3;
+}

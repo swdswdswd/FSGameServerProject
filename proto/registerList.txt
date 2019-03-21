@@ -1,0 +1,16 @@
+BaseCommon
+PlayerCommon
+ObjectCommon
+LoginGameC2S
+LoginGameS2C
+LoadGameMapC2S
+LoadGameMapS2C
+ObjectSyncS2C
+HeatALiveC2S
+HeatALiveS2C
+PlayerMoveC2S
+PlayerMoveS2C
+ChatC2S
+ChatS2C
+SkillC2S
+SkillS2C
